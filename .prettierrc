@@ -15,6 +15,6 @@
   "htmlWhitespaceSensitivity": "ignore",  
   "vueIndentScriptAndStyle": false,  
   "endOfLine": "auto",  
-  "trailingComma": "all",
+  "trailingComma": "none",
   "plugins": ["prettier-plugin-tailwindcss"]
 }

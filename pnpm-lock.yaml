@@ -75,6 +75,9 @@ importers:
       prettier-plugin-tailwindcss:
         specifier: ^0.6.5
         version: 0.6.5(prettier@3.3.2)
+      tailwindcss:
+        specifier: ^3.4.4
+        version: 3.4.4
       typescript:
         specifier: ^5
         version: 5.5.3

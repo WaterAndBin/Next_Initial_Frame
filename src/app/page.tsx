@@ -15,6 +15,9 @@ export default function Home(): ReactElement {
         <div className="w-full bg-red-500">
           <div> 测试数据 </div>
         </div>
+        <div className="h-10 border-2 bg-green-200">您好啊</div>
+        <div className="bg-pink-500"> hallo,world~ </div>
+        <div>这是一条测试数据</div>
       </div>
     </main>
   );

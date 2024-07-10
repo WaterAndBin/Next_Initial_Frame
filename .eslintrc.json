@@ -41,7 +41,9 @@
     "array-callback-return": "off",
     "import/named": "off", // 禁用 import/named 规则
     "tailwindcss/classnames-order": "off", // Respect prettier-plugin-tailwindcss order
-    "no-unused-vars": "error"
+    "no-unused-vars": "error", // 对未使用的函数或者参数进行报错
+    "@typescript-eslint/comma-dangle": "off", // 忽略对象后面需要 ,
+    "@typescript-eslint/triple-slash-reference": "off"
   },
   "overrides": [
     {
