@@ -1,6 +1,8 @@
 import { type ReactElement } from 'react';
 
 export default function Home(): ReactElement {
+  const a = 1;
+
   return (
     <main className="">
       {/* <Image

@@ -40,7 +40,8 @@
     "eqeqeq": "off", // 取消用 ==,
     "array-callback-return": "off",
     "import/named": "off", // 禁用 import/named 规则
-    "tailwindcss/classnames-order": "off" // Respect prettier-plugin-tailwindcss order
+    "tailwindcss/classnames-order": "off", // Respect prettier-plugin-tailwindcss order
+    "no-unused-vars": "error"
   },
   "overrides": [
     {
