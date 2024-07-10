@@ -46,7 +46,11 @@
   "overrides": [
     {
       "files": ["./src/**/*.{.js,.ts,.tsx,.jsx}", "./src/*.{.js,.ts,.tsx,.jsx}"],
-      "extends": ["standard-with-typescript", "@typescript-eslint/parser", "plugin:prettier/recommended"]
+      "extends": ["standard-with-typescript", "plugin:prettier/recommended"]
+    },
+    {
+      "files": ["./src/**/*.{.js,.ts,.tsx,.jsx}", "./src/*.{.js,.ts,.tsx,.jsx}"],
+      "parser": "@typescript-eslint/parser"
     }
   ],
   "settings": {

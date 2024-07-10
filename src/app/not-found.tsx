@@ -4,9 +4,6 @@ import Link from 'next/link';
 import { type ReactElement } from 'react';
 
 export default function notFound(): ReactElement {
-  123;
-  123;
-  casdasd;
   return (
     <div className="flex h-screen flex-col items-center justify-center">
       <Image src="/svg/sad.svg" alt="not-found" width="160" height="37" priority></Image>
