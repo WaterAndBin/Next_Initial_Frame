@@ -1,3 +1,65 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": [
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:promise/recommended",
+    "plugin:@next/next/recommended",
+    "next",
+    "eslint:recommended",
+    "standard-with-typescript",
+    "plugin:tailwindcss/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 13,
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["prettier", "@typescript-eslint", "import", "promise", "react", "tailwindcss"],
+  "rules": {
+    "prettier/prettier": "error",
+    "vue/multi-word-component-names": "off", // 禁用对 组件名字检查
+    "@typescript-eslint/no-unused-vars": "off", // 禁用对 js 的 var 检查
+    "@typescript-eslint/semi": "off", // 禁用对函数最后的 ; 检查
+    "@typescript-eslint/space-before-function-paren": "off", // 禁用对 函数前面空一格检查
+    "no-console": "off", // 禁用对 console 的检查
+    "@typescript-eslint/member-delimiter-style": "off", // 禁用对 ; 检查
+    "@typescript-eslint/no-floating-promises": "off", // 禁用每个方法都需要async await
+    "@typescript-eslint/strict-boolean-expressions": "off", // 禁用不能直接 undefined
+    "@typescript-eslint/prefer-function-type": "off",
+    "no-lonely-if": "off", // 取消if但是没有else
+    "eqeqeq": "off", // 取消用 ==,
+    "array-callback-return": "off",
+    "import/named": "off", // 禁用 import/named 规则
+    "tailwindcss/classnames-order": "off" // Respect prettier-plugin-tailwindcss order
+  },
+  "overrides": [
+    {
+      "files": ["./src/**/*.{.js,.ts,.tsx,.jsx}", "./src/*.{.js,.ts,.tsx,.jsx}"],
+      "extends": ["standard-with-typescript", "@typescript-eslint/parser", "plugin:prettier/recommended"]
+    }
+  ],
+  "settings": {
+    "tailwindcss": {
+      // These are the default values but feel free to customize
+      "callees": ["classnames", "clsx", "ctl"],
+      "config": "tailwind.config.js", // returned from `loadConfig()` utility if not provided
+      "cssFiles": ["**/*.css", "!**/node_modules", "!**/.*", "!**/dist", "!**/build"],
+      "cssFilesRefreshRate": 5000,
+      "removeDuplicates": true,
+      "skipClassAttribute": false,
+      "whitelist": [],
+      "tags": [], // can be set to e.g. ['tw'] for use in tw`bg-blue`
+      "classRegex": "^class(Name)?$" // can be modified to support custom attributes. E.g. "^tw$" for `twin.macro`
+    }
+  }
 }

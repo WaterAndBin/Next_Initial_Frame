@@ -1,0 +1,21 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .link-after {
+    @apply after:transition-all after:left-0 after:bottom-0 after:h-[0.1rem] after:w-0 after:bg-black after:absolute after:hover:w-full;
+  }
+
+  .welcome-ball {
+    @apply absolute bg-opacity-30 w-[140px] h-[140px] z-[-1] rounded-full top-0 left-0;
+  }
+
+  .flex-default {
+    @apply flex justify-center items-center;
+  }
+
+  .text-sans {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+} */
