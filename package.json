@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 9030",
+    "dev": "start http://localhost:9030 && next dev -p 9030",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --ext \".ts,.js,.tsx,.jsx\" --ignore-path .gitignore .",

@@ -43,7 +43,10 @@
     "tailwindcss/classnames-order": "off", // Respect prettier-plugin-tailwindcss order
     "no-unused-vars": "error", // 对未使用的函数或者参数进行报错
     "@typescript-eslint/comma-dangle": "off", // 忽略对象后面需要 ,
-    "@typescript-eslint/triple-slash-reference": "off"
+    "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/no-explicit-any": "off", // 对any报错忽视
+    "@typescript-eslint/no-extraneous-class": "off", // 对空类进行忽视
+    "@typescript-eslint/no-confusing-void-expression": "off" // 禁止对 ()=>test()这种情况进行报错
   },
   "overrides": [
     {
